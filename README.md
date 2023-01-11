@@ -8,7 +8,9 @@ I also changed the .upper-data block background image to reflect the day/night c
 
 Another change made is to display all values in the imperial format (`weatherData.current.temp_f` vs `weatherData.current.temp_c` and `weatherData.current.wind_mph` vs `weatherData.current.wind_kph`) and the default city is set to San Antonio.
 
-Lastly, I set up a static version of the page that shows if the API call fails (`*ngIf="!weatherData"` in the second container div.) and there is no valid available data. There is a text phrase that shows up indicating that the data is not current. I removed the console log of the repsonse that was in the `app.component.ts` file. If you are having API issues, you may want to add it back to aid in troubleshooting.
+Also, I set up a static version of the page that shows if the API call fails (`*ngIf="!weatherData"` in the second container div.) and there is no valid available data. There is a text phrase that shows up indicating that the data is not current. 
+
+Lastly, I removed the console log of the repsonse that was in the `app.component.ts` file. If you are having API issues, you may want to add it back to aid in troubleshooting.
 
 ## Development server
 
